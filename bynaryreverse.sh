@@ -1,0 +1,53 @@
+#!/bin/bash
+
+
+# b|n4ryR3v3rs3 by c0deninja 
+# gotr00t security team
+# shoutout to Colossus for helping me out!
+# Discord: http://discord.gg/JV6pu5q
+
+
+# b|n4ryR3v3rs3 was made for the hackthebox Curling machine.
+# this will help you retrieve the password in password_backup
+
+user=$(whoami)
+
+echo "I hope you enjoy b|n4ryR3v3rs3 $user"
+
+echo -n "Enter file name to reverse: "
+read filename
+
+sleep 1s
+
+xxd -r $filename > $filename.fixed
+
+echo "Checking file type, please wait..."
+sleep 1s
+
+file $filename.fixed
+
+cp $filename.fixed password.bz2
+
+bzip2 -d password.bz2
+
+file password
+
+cp password password2.gz
+
+gunzip password2.gz
+
+file password2
+
+cp password2 password3.bz2
+
+bzip2 -d password3.bz2
+
+file password3
+
+cp password3 password4.tar
+
+tar -xvf password4.tar
+
+password=$(cat password.txt)
+
+echo "The password is: $password"
