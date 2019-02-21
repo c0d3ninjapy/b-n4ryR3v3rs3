@@ -3,7 +3,7 @@
 
 # b|n4ryR3v3rs3 + shell by c0deninja 
 # gotr00t security team
-# shoutout to Colossus for helping me out!
+# shoutout to colossus for helping me out!
 # Discord: http://discord.gg/JV6pu5q
 
 
