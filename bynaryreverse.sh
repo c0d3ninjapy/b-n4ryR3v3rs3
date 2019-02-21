@@ -57,7 +57,7 @@ echo "The password is: $password"
 
 # SSH Login
 
-echo "SHELL: Creating a ssh sessions, please wait...."
+echo "SHELL: Creating a ssh session, please wait...."
 echo
 
 sshpass -p $password ssh floris@10.10.10.150
