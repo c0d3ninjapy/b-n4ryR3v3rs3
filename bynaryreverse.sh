@@ -16,6 +16,7 @@
 user=$(whoami)
 
 echo "I hope you enjoy b|n4ryR3v3rs3 $user"
+echo
 
 echo -n "Enter file name to reverse: "
 read filename
