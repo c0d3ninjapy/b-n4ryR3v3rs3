@@ -8,7 +8,7 @@
 
 
 # b|n4ryR3v3rs3 was made for the hackthebox Curling machine.
-# this will help you retrieve the password in password_backup
+# this will help you retrieve the password in /home/floris/password_backup
 
 user=$(whoami)
 
